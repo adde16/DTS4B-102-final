@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
 
 function Navigationbar() {
   return (
@@ -11,9 +12,15 @@ function Navigationbar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/genre/action">ACTION</Nav.Link>
-              <Nav.Link href="/genre/horror">HORROR</Nav.Link>
-              <Nav.Link href="/genre/horror">FAMILY</Nav.Link>
+              <Nav.Link>
+                <Link to="/genre/action">ACTION</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/genre/horror">HORROR</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/genre/family">FAMILY</Link>
+              </Nav.Link>
             </Nav>
             <Nav>
               <Nav.Link>MASUK</Nav.Link>
