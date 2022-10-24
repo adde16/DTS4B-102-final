@@ -1,6 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
 function Navigationbar() {
@@ -21,6 +23,21 @@ function Navigationbar() {
               <Nav.Link>
                 <Link to="/genre/family">FAMILY</Link>
               </Nav.Link>
+              <Nav.Link>
+                <Link to="/genre/scifi">SCIENCE FICTION</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/genre/animation">ANIMATION</Link>
+              </Nav.Link>
+              <Form className="d-flex">
+                <Form.Control
+                  type="search"
+                  placeholder="Cari"
+                  className="me-2"
+                  aria-label="Search"
+                />
+                <Button variant="warning">Cari</Button>
+              </Form>
             </Nav>
             <Nav>
               <Nav.Link>MASUK</Nav.Link>

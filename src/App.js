@@ -4,6 +4,8 @@ import Content from "./components/Content";
 import Action from "./genre/Action";
 import Horror from "./genre/Horror";
 import Family from "./genre/Family";
+import Scifi from "./genre/Scifi";
+import Animation from "./genre/Animation";
 import "./style/style.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
@@ -17,6 +19,8 @@ function App() {
           <Route path="genre/action/*" element={<Action />} />
           <Route path="genre/horror/*" element={<Horror />} />
           <Route path="genre/family/*" element={<Family />} />
+          <Route path="genre/scifi/*" element={<Scifi />} />
+          <Route path="genre/animation/*" element={<Animation />} />
         </Routes>
       </div>
     </BrowserRouter>
