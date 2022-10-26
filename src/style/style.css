@@ -41,6 +41,11 @@
   height: 500px;
 }
 
-.cards{
+.cards {
   padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.d-flex{
+  padding-top: 20px;
 }

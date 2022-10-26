@@ -3,7 +3,7 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 
-const Action = () => {
+const Horror = () => {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     axios
@@ -22,6 +22,9 @@ const Action = () => {
 
   return (
     <div>
+      <div className="intro myBG">
+        <h2 className="title">WEBSITE MENCARI FILM FAVORIT</h2>
+      </div>
       <Container>
         <h2 className="subTitle">DAFTAR FILM GENRE HORROR</h2>
         <Row>
@@ -48,4 +51,4 @@ const Action = () => {
   );
 };
 
-export default Action;
+export default Horror;

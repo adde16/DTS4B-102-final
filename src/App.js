@@ -6,6 +6,9 @@ import Horror from "./genre/Horror";
 import Family from "./genre/Family";
 import Scifi from "./genre/Scifi";
 import Animation from "./genre/Animation";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import Cari from "./components/Cari";
 import "./style/style.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
@@ -21,6 +24,9 @@ function App() {
           <Route path="genre/family/*" element={<Family />} />
           <Route path="genre/scifi/*" element={<Scifi />} />
           <Route path="genre/animation/*" element={<Animation />} />
+          <Route path="cari/*" element={<Cari />} />
+          <Route path="login/*" element={<Login />} />
+          <Route path="register/*" element={<Register />} />
         </Routes>
       </div>
     </BrowserRouter>

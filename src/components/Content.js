@@ -22,6 +22,9 @@ const Content = () => {
 
   return (
     <div>
+      <div className="intro myBG">
+        <h2 className="title">WEBSITE MENCARI FILM FAVORIT</h2>
+      </div>
       <Container>
         <h2 className="subTitle">DAFTAR FILM POPULER</h2>
         <Row>
