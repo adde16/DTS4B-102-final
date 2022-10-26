@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 
 // TODO: replace with your own config
 const firebaseConfig = {
-  apiKey: "AIzaSyDHWLZLq1Ionxa2yt4DVgJyRk-KkrSO7sY",
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
   authDomain: "tmdb-62bcb.firebaseapp.com",
   projectId: "tmdb-62bcb",
   storageBucket: "tmdb-62bcb.appspot.com",

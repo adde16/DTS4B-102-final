@@ -62,7 +62,12 @@ const Navigationbar = () => {
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="/login">MASUK</Nav.Link>
+              <Link
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                to="/login"
+              >
+                MASUK
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
